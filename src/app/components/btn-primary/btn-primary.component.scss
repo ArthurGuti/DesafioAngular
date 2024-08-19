@@ -1,0 +1,25 @@
+.btn {
+    font-size: 7px;
+    padding: 0.9em;
+    font-family: "Roboto", sans-serif;
+    margin-top: 3%;
+    border-radius: 0.5em;
+    cursor: pointer;
+ 
+    &:disabled {
+       cursor: not-allowed;
+       opacity: 0.6;
+    }
+ 
+    &.primary {
+       background-color: #0f110f;
+       border: #0f110f;
+       color: snow;
+    }
+    
+    &.secondary {
+       background-color: snow;
+       border: snow;
+       color: #0f110f;
+    }
+ }
