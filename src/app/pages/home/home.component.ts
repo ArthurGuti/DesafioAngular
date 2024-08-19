@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit, OnDestroy{
   investimentos: number = 0;
 
   clientesFinal: number = 87;
-  numeroFinal: number = 150;
+  numeroFinal: number = 100;
   investimentoFinal: number = 20;
 
   private intervaloContador: any;

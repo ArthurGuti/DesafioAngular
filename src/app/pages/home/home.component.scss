@@ -6,12 +6,20 @@ main {
 
 .main-section {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   padding-left: 4%;
   padding-right: 4%;
 
-  @media (min-width: 1080px) {
+  @media (max-width: 768px) {
+    .main-section {
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #Titulo {
+      font-size: 80px;
+    }
     .headline {
       width: 30%;
     }
@@ -118,6 +126,8 @@ main {
     margin: 0;
     padding: 0;
     z-index: 10;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 }
 
@@ -139,11 +149,6 @@ main {
     height: auto;
     width: 25%;
     margin-bottom: 5%;
-  }
-
-  .empresas {
-    width: 75%;
-    margin-top: 20%;
   }
 
   span {
@@ -190,7 +195,13 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+
+  @media (max-width: 768px) and (min-width: 646px) {
+    .benefit-data {
+      flex-direction: column;
+      margin-top: 10%;
+    }
+  }
 
   .benefit-data {
     h2 {
@@ -214,13 +225,6 @@ main {
 
 .headline {
   position: relative;
-}
-
-#vetor {
-  position: absolute;
-  z-index: 10;
-  bottom: 90%;
-  left: 40%;
 }
 
 h1 {
@@ -297,6 +301,411 @@ h1 {
     z-index: 5;
     margin-top: 105%;
     margin-left: 0%;
+    position: absolute;
+  }
+
+  .benefit-section {
+    flex-direction: row;
+  }
+
+  .secundary-dataEngine {
+    flex-direction: row;
+  }
+
+  .secundary-dataMedia {
+    flex-direction: row;
+  }
+
+  .secundary-dataAnalytics {
+    flex-direction: row;
+  }
+
+  .medium-section {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .medium-section {
+    background: radial-gradient(circle at center, #2688a2, #84d3e6);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    z-index: 7;
+
+    @keyframes marqueeLeftToRight {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes marqueeRightToLeft {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .headline {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .headline h1 {
+      display: inline-block;
+      white-space: nowrap;
+      position: absolute;
+      animation: marquee 10s linear infinite;
+      color: snow;
+      margin: 0;
+      padding: 0;
+      font-size: 90px;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .headline #textoCima {
+      top: 30%;
+      animation: marqueeLeftToRight 10s linear infinite;
+      z-index: 2;
+    }
+
+    .headline #textoBaixo {
+      top: 60%;
+      animation: marqueeRightToLeft 10s linear infinite;
+      z-index: 15;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+      z-index: 5;
+    }
+
+    h1 {
+      font-size: 25px;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+      color: snow;
+      margin: 0;
+      padding: 0;
+      z-index: 10;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+  }
+
+  .imagemPessoas {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 18%;
+    z-index: 5;
+    margin-left: 55%;
+    margin-bottom: 52%;
+    position: absolute;
+  }
+
+  .benefit-section {
+    flex-direction: row;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  #mulherAzul {
+    height: auto;
+    width: 18%;
+    z-index: 10;
+    margin-top: 47%;
+    margin-left: 46%;
+    position: absolute;
+  }
+
+  #homemRosa {
+    height: auto;
+    width: 20%;
+    z-index: 10;
+    margin-top: 41%;
+    margin-left: 65%;
+    position: absolute;
+  }
+
+  #foguete {
+    height: auto;
+    width: 4%;
+    z-index: 10;
+    margin-left: 84%;
+    margin-top: 12%;
+    position: absolute;
+  }
+
+  #traco {
+    height: auto;
+    width: 37%;
+    z-index: 3;
+    margin-top: 30%;
+    margin-left: 40%;
+    position: absolute;
+  }
+
+  #lampada {
+    height: auto;
+    width: 3%;
+    z-index: 5;
+    margin-top: 45%;
+    margin-left: 39%;
+    position: absolute;
+  }
+
+  .benefit-section {
+    flex-direction: row;
+  }
+
+  .secundary-dataEngine {
+    flex-direction: row;
+  }
+
+  .secundary-dataMedia {
+    flex-direction: row;
+  }
+
+  .secundary-dataAnalytics {
+    flex-direction: row;
+  }
+
+  .medium-section {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1080px) {
+  .secundary-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    // gap: 1em;
+    margin-bottom: 8%;
+    margin-top: 3%;
+
+    .secundary-dataEngine {
+      width: 30%;
+      height: 13em;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 3%;
+      border-radius: 0 20px 0 20px;
+    }
+
+    .secundary-dataMedia {
+      width: 30%;
+      height: 13em;
+      margin-top: 3em;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 3%;
+      border-radius: 0 20px 0 20px;
+    }
+
+    .secundary-dataAnalytics {
+      width: 30%;
+      height: 13em;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 3%;
+      border-radius: 0 20px 0 20px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .icone {
+      height: auto;
+      width: 17%;
+      margin-bottom: 5%;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+      color: #0f110f;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .headline {
+    padding-left: 5em;
+  }
+
+  #textinho {
+    font-size: 15px;
+  }
+
+  .benefit-section {
+    margin-top: 15%;
+  }
+
+  .imagemPessoas {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 18%;
+    z-index: 5;
+    margin-left: 30%;
+    margin-bottom: 20%;
+    position: absolute;
+  }
+
+  #mulherAzul {
+    height: auto;
+    width: 18%;
+    z-index: 10;
+    margin-top: 47%;
+    margin-left: 21%;
+    position: absolute;
+  }
+
+  #homemRosa {
+    height: auto;
+    width: 20%;
+    z-index: 10;
+    margin-top: 41%;
+    margin-left: 41%;
+    position: absolute;
+  }
+
+  #foguete {
+    height: auto;
+    width: 4%;
+    z-index: 10;
+    margin-left: 59%;
+    margin-top: 12%;
+    position: absolute;
+  }
+
+  #traco {
+    height: auto;
+    width: 37%;
+    z-index: 3;
+    margin-top: 30%;
+    margin-left: 15%;
+    position: absolute;
+  }
+
+  #lampada {
+    height: auto;
+    width: 3%;
+    z-index: 5;
+    margin-top: 45%;
+    margin-left: 14%;
+    position: absolute;
+  }
+
+  .benefit-section {
+    flex-direction: row;
+  }
+
+  .secundary-dataEngine {
+    flex-direction: row;
+  }
+
+  .secundary-dataMedia {
+    flex-direction: row;
+  }
+
+  .secundary-dataAnalytics {
+    flex-direction: row;
+  }
+
+  .medium-section {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1079px) and (min-width: 769px) {
+  .headline {
+    width: 38%;
+  }
+
+  #Titulo {
+    font-size: 50px;
+  }
+
+  .benefit-section {
+    margin-top: 8%;
+  }
+
+  .imagemPessoas {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 18%;
+    z-index: 5;
+    margin-left: 50%;
+    margin-bottom: 50%;
+    position: absolute;
+  }
+
+  #mulherAzul {
+    height: auto;
+    width: 18%;
+    z-index: 10;
+    margin-top: 47%;
+    margin-left: 41%;
+    position: absolute;
+  }
+
+  #homemRosa {
+    height: auto;
+    width: 20%;
+    z-index: 10;
+    margin-top: 41%;
+    margin-left: 61%;
+    position: absolute;
+  }
+
+  #foguete {
+    height: auto;
+    width: 4%;
+    z-index: 10;
+    margin-left: 79%;
+    margin-top: 12%;
+    position: absolute;
+  }
+
+  #traco {
+    height: auto;
+    width: 37%;
+    z-index: 3;
+    margin-top: 30%;
+    margin-left: 35%;
+    position: absolute;
+  }
+
+  #lampada {
+    height: auto;
+    width: 3%;
+    z-index: 5;
+    margin-top: 45%;
+    margin-left: 34%;
     position: absolute;
   }
 
