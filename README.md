@@ -1,27 +1,56 @@
-# DesafioAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+ ![ilustracao-do-conceito-de-digitacao-de-codigo](https://github.com/user-attachments/assets/903f919e-1cd1-4580-82f2-63f7c6407074)
 
-## Development server
+#  Desafio-Landingpage-Angular 
+## 💻  Foi criado uma landingpage utilizando a seguinte tecnologia: Angular.🅰️
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<p align="center">
+ <a href="#features"> 👉 Features</a> •
+ <a href="#pre-requisitos"> 👉 Pre requisitos</a> • 
+ <a href="#tecnologias"> 👉 Tecnologias</a> • 
+ <a href="#autor">👉 Autor</a> •
+ <a href="#saiba-mais">👉 Saiba mais</a>
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# ✅Features
 
-## Build
+- [x] Instalar Angular
+- [x] Criar template no figma
+- [x] Criar estruturação de pastas
+- [x] Estilizar e dar vida ao projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# ✨Pre requisitos
 
-## Running unit tests
+## Instalar o Angular 
+$ npm install -g @angular/cli@17
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## instalar o node_modules 
+$ npm i 
 
-## Running end-to-end tests
+## Instalar o bootstrap
+$ npm i bootstrapnpm i tailwindcss
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# 🛠Tecnologias
 
-## Further help
+Na construção desse projeto utilizei as seguintes tecnologias:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular (17)]([https://reactnative.dev/docs/environment-setup](https://v17.angular.io/docs))
+- [Bootstrap]([https://v2.tailwindcss.com/docs](https://getbootstrap.com/docs/4.1/getting-started/introduction/))
+  
+# 📝Saiba mais
+Angular:
+- Angular é uma poderosa ferramenta para o desenvolvimento (alem de facilitar sua vida na hora de criar componentes) rápido de aplicações web robustas e escaláveis. Se você deseja criar aplicações web utilizando TypeScript e um framework baseado em componentes, o Angular é uma excelente opção.
+
+# 🧑‍💻Autor
+<a href="https://github.com/ArthurGuti/">
+<div style="border-radius: 25%;">
+  <img src="https://github.com/ArthurGuti/React-Native-Fullstack/assets/131212175/c700239d-1d33-4e41-a4cb-2ccd2baf468b" width="100px" style="border-radius: 50%" alt="Imagem perfil Arthur Gutierrez"/>
+</div>
+ <br/>
+ <sub><b>Arthur Gutierrez</b></sub>
+</a> <a href="www.linkedin.com/in/arthur-gutierrez-de-oliveira-dev2110" title="Linkedin">🚀</a><br/>
+Made by Arthur Gutierrez 👋🏽 Get in touch!
+<br/>
+
+![Linkedin Badge](https://img.shields.io/badge/-ArthurDev-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/arthur-gutierrez-de-oliveira-dev2110)
