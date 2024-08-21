@@ -12,5 +12,9 @@ export const routes: Routes = [
     {
         path: 'privacy-policy',
         loadComponent: () => import('./pages/privacy-policy/privacy-policy.component').then((c) => c.PrivacyPolicyComponent)
+    },
+    {
+        path: '**',
+        loadComponent: () => import('./pages/not-found/not-found.component').then((c) => c.NotFoundComponent)
     }
 ];
