@@ -1,18 +1,15 @@
-<section class="form-section">
-    <div>
-      <h3>Quer Impressionar Seus Clientes?</h3>
-      <p>Ligue para nós para suporte rápido neste número.</p>
-      <h4>(17) 99613-2110</h4>
-    </div>
-    <form>
-      <div class="input-group">
-        <label for="name" placeholder="Nome">Nome</label>
-        <input id="name" />
-        <br>
-        <label for="email">Email</label>
-        <input id="email" placeholder="Email" />
+<div class="card border-0 shadow p-4 d-flex flex-column align-items-center gap-4 mx-3">
+   <h2 class="text-center">Entrar em contato</h2>
+   <form class="row gap-3 gap-md-0">
+      <div class="col-md-6">
+         <input class="p-2 rounded w-100" type="text" placeholder="Seu nome">
       </div>
-      <app-btn-primary  btn-text="ENVIE SUA MENSAGEM"></app-btn-primary>
-    </form>
-  </section>
-  
+      <div class="col-md-6">
+         <input class="p-2 rounded w-100" type="email" placeholder="Seu e-mail">
+      </div>
+      <div class="col-md-12 mt-0 mt-md-4">
+         <textarea class="w-100 p-2 rounded" rows="5" placeholder="Sua mensagem"></textarea>
+      </div>
+   </form>
+   <button class="w-100 border-0 rounded">Enviar</button>
+</div>

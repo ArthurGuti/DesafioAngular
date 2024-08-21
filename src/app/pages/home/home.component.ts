@@ -2,15 +2,21 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { BtnPrimaryComponent } from '../../components/btn-primary/btn-primary.component';
 import { NewsletterFormComponent } from '../../components/newsletter-form/newsletter-form.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, BtnPrimaryComponent, NewsletterFormComponent],
+  imports: [
+    HeaderComponent,
+    BtnPrimaryComponent,
+    NewsletterFormComponent,
+    FooterComponent,
+  ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-export class HomeComponent implements OnInit, OnDestroy{
+export class HomeComponent implements OnInit, OnDestroy {
   contador: number = 0;
   clientes: number = 0;
   investimentos: number = 0;
@@ -25,17 +31,40 @@ export class HomeComponent implements OnInit, OnDestroy{
 
   constructor() {}
 
+  scrollToSection() {
+    const section = document.getElementById('forms');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   ngOnInit(): void {
     this.iniciarContadores();
   }
 
   private iniciarContadores() {
-    this.iniciarContador('contador', this.numeroFinal, (value) => this.contador = value);
-    this.iniciarContador('clientes', this.clientesFinal, (value) => this.clientes = value);
-    this.iniciarContador('investimentos', this.investimentoFinal, (value) => this.investimentos = value);
+    this.iniciarContador(
+      'contador',
+      this.numeroFinal,
+      (value) => (this.contador = value)
+    );
+    this.iniciarContador(
+      'clientes',
+      this.clientesFinal,
+      (value) => (this.clientes = value)
+    );
+    this.iniciarContador(
+      'investimentos',
+      this.investimentoFinal,
+      (value) => (this.investimentos = value)
+    );
   }
 
-  private iniciarContador(nome: string, finalValue: number, updateFunction: (value: number) => void) {
+  private iniciarContador(
+    nome: string,
+    finalValue: number,
+    updateFunction: (value: number) => void
+  ) {
     const intervalo = 50;
     let value = 0;
     const incremento = () => {
@@ -60,5 +89,4 @@ export class HomeComponent implements OnInit, OnDestroy{
       clearInterval(this.intervaloInvestimentos);
     }
   }
-
 }
